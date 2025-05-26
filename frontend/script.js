@@ -4,7 +4,7 @@ class MedicalAssistant {
     constructor() {
         this.symptoms = [];
         this.medicalHistory = [];
-        this.apiBaseUrl = 'http://192.168.0.227:5000'; // Change this to your backend URL
+        this.apiBaseUrl = 'https://symptocheck.onrender.com'; // Change this to your backend URL
         
         this.initializeEventListeners();
         this.checkApiConnection();
