@@ -1,0 +1,343 @@
+2025-05-26 15:45:39,178 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 15:45:39,180 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 15:45:56,302 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 15:45:56] "GET / HTTP/1.1" 200 -
+2025-05-26 15:48:50,821 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 15:48:50] "GET / HTTP/1.1" 200 -
+2025-05-26 15:49:09,035 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 15:49:09] "[31m[1mGET /diagnose HTTP/1.1[0m" 405 -
+2025-05-26 15:49:45,861 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 15:49:45] "[31m[1mGET /advanced-analysis HTTP/1.1[0m" 405 -
+2025-05-26 15:59:02,852 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 15:59:02] "[31m[1mGET /advanced-analysis HTTP/1.1[0m" 405 -
+2025-05-26 16:00:22,493 - medical_assistant - INFO - Advanced analysis request received - Symptoms count: 2
+2025-05-26 16:00:24,281 - medical_assistant - ERROR - Error processing advanced analysis request: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 16:00:24,282 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:00:24] "[35m[1mPOST /advanced-analysis HTTP/1.1[0m" 500 -
+2025-05-26 16:00:33,529 - medical_assistant - INFO - Diagnosis request received - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55 | Gender: male
+2025-05-26 16:00:33,849 - medical_assistant - ERROR - Error calling Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 16:00:33,850 - medical_assistant - INFO - Top diagnosis: heart attack with severity critical
+2025-05-26 16:00:33,850 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:00:33] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 16:00:58,021 - medical_assistant - ERROR - Error processing diagnosis request: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-05-26 16:00:58,022 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:00:58] "[35m[1mPOST /diagnose HTTP/1.1[0m" 500 -
+2025-05-26 16:01:56,735 - medical_assistant - INFO - Diagnosis request received - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55 | Gender: male
+2025-05-26 16:01:57,053 - medical_assistant - ERROR - Error calling Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 16:01:57,054 - medical_assistant - INFO - Top diagnosis: heart attack with severity critical
+2025-05-26 16:01:57,054 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:01:57] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 16:11:44,433 - medical_assistant - INFO - Diagnosis request received - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55 | Gender: male
+2025-05-26 16:11:44,785 - medical_assistant - ERROR - Error calling Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 16:11:44,786 - medical_assistant - INFO - Top diagnosis: heart attack with severity critical
+2025-05-26 16:11:44,787 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:11:44] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 16:25:10,311 - medical_assistant - INFO - Diagnosis request received - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55 | Gender: male
+2025-05-26 16:25:11,913 - medical_assistant - ERROR - Error calling Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 16:25:11,914 - medical_assistant - INFO - Top diagnosis: heart attack with severity critical
+2025-05-26 16:25:11,914 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:25:11] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 16:25:42,556 - medical_assistant - INFO - Starting Precision Medical Assistant API v3.0 on port 5000
+2025-05-26 16:25:42,586 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 16:25:42,586 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 16:25:47,585 - medical_assistant - INFO - Precision diagnosis - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55
+2025-05-26 16:25:47,586 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:25:47] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 16:31:08,615 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 16:31:08,644 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 16:31:08,644 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 16:31:33,479 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['chest pain', 'shortness of breath'] | Age: 45
+2025-05-26 16:31:33,826 - medical_assistant - ERROR - Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-05-26 16:31:33,827 - medical_assistant - ERROR - Enhanced diagnosis error: name 'self' is not defined
+2025-05-26 16:31:33,828 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:31:33] "[35m[1mPOST /diagnose HTTP/1.1[0m" 500 -
+2025-05-26 16:31:44,060 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55
+2025-05-26 16:31:45,740 - medical_assistant - ERROR - Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-05-26 16:31:45,743 - medical_assistant - ERROR - Enhanced diagnosis error: name 'self' is not defined
+2025-05-26 16:31:45,744 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 16:31:45] "[35m[1mPOST /diagnose HTTP/1.1[0m" 500 -
+2025-05-26 19:42:13,307 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 19:42:13,347 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 19:42:13,347 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 19:42:22,676 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55
+2025-05-26 19:42:23,277 - medical_assistant - ERROR - Gemini API error: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-05-26 19:42:23,284 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 19:42:23] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 21:13:55,860 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 21:13:55,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 21:13:55,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 21:14:22,215 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['chest pain', 'shortness of breath'] | Age: 55
+2025-05-26 21:14:22,649 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 21:14:22,651 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:14:22] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 21:14:42,236 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['cough', 'fever', 'tired'] | Age: 25
+2025-05-26 21:14:42,562 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 21:14:42,614 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:14:42] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 21:28:46,954 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 21:28:46,979 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 21:28:46,981 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 21:28:52,713 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['cough', 'fever', 'tired'] | Age: 25
+2025-05-26 21:28:53,228 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 21:28:53,229 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:28:53] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 21:31:02,937 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:31:02] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:31:35,115 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 21:31:35,136 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 21:31:35,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 21:32:19,184 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:32:19] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:37:26,903 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:37:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:50,839 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:51,394 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:51] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:52,059 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:52,325 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:52,650 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:53,169 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:53,424 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:53,769 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:54,297 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:54] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:54,543 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:54] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:54,882 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:54] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:55,410 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:55] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:55,659 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:55] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:55,935 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:55] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:56,233 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:41:56,780 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:41:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:12,168 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:12] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:16,272 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:16] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:49,017 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:49] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:49,307 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:49] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:49,510 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:49] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:49,721 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:49] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:50,013 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:50,166 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:50,417 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:50,845 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:51,047 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:51] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:51,257 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:51] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:51,475 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:51] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:51,835 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:51] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:52,050 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:52,247 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:52,435 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:52,665 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:52,861 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:52] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:53,056 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:53,277 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:53,602 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:53,896 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:53] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:54,282 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:54] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:54,676 - werkzeug - INFO - 127.0.0.1 - - [26/May/2025 21:49:54] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:55,160 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:55] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:55,597 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:55] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:56,005 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:56,406 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:56,812 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:57,204 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:57] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:57,409 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:57] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:57,805 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:57] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:58,188 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:58,605 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:58,846 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:59,230 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:59] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:49:59,636 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:49:59] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:50:00,063 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:50:00] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:50:00,451 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:50:00] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:50:00,855 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:50:00] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:50:56,857 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 21:50:56,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 21:50:56,879 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 21:51:05,160 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:05,442 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:05,666 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:05,859 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:06,075 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:06] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:06,268 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:06] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:06,458 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:06] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:06,653 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:06] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:06,855 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:06] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:07,044 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:07] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:07,296 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:07] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:07,635 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:07] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:07,851 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:07] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:08,244 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:08] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:08,443 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:08] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:08,690 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:08] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:08,880 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:08] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:09,295 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:09] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:09,511 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:09] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:09,727 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:09] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:51:09,950 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:51:09] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:52:50,899 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:52:50] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:15,392 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:15] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:15,653 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:15] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:16,070 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:16] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:16,473 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:16] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:16,869 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:16] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:17,264 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:17] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:17,672 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:17] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:18,077 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:18] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:18,477 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:18] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:18,741 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:18] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:19,103 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:19] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:19,504 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:19] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:19,890 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:19] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:20,305 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:20] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:20,717 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:20] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:21,128 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:21] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:21,520 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:21] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:21,920 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:21] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:22,310 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:22] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:22,510 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:22] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:22,735 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:22] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:22,936 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:22] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:23,117 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:23,345 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:23,539 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:23,750 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:23,939 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:24,133 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:24] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:24,325 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:24] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:24,530 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:24] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:24,752 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:24] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:24,929 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:24] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:25,129 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:25] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:25,350 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:25] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:25,552 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:25] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:25,758 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:25] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:26,139 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:26,361 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:26,555 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:26,764 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:26,962 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:26] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:27,156 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:27] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:27,363 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:27] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:27,577 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:27] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:27,790 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:27] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:27,992 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:27] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:28,200 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:28] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:28,412 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:28] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:28,612 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:28] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:28,828 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:28] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:29,034 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:29] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:29,261 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:29] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:29,479 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:29] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:29,862 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:29] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:30,084 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:30,279 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:30,498 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:30,711 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:30,934 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:31,281 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:31] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:31,499 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:31] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:31,705 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:31] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:32,090 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:32] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:32,314 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:32] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:32,529 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:32] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:32,738 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:32] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:32,932 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:32] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:33,140 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:33] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:33,372 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:33] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:33,561 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:33] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:33,762 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:33] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:33,980 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:33] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:34,175 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:34] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:34,370 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:34] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:34,584 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:34] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:34,772 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:34] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:35,006 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:35] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:35,373 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:35] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:35,608 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:35] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:35,801 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:35] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:36,005 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:36] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:36,220 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:36] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:36,422 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:36] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:36,633 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:36] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:36,848 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:36] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:37,064 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:37] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:37,251 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:37] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:37,638 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:37] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:37,851 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:37] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:38,074 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:38,267 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:38,477 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:38,684 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:38,899 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:39,101 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:39] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:39,294 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:39] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:39,547 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:39] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:39,923 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:39] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:40,113 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:40] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:40,316 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:40] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:40,538 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:40] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:40,729 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:40] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:40,970 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:40] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:41,328 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:41] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:53:41,552 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:53:41] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:57:30,880 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:57:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:57:38,214 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:57:38] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:57:54,431 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:57:54] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-26 21:57:58,421 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:57:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:59:22,655 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:59:22] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 21:59:22,760 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 21:59:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-26 22:00:04,553 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:00:04] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:00:05,491 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:00:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:01:44,679 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 22:01:44,711 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 22:01:44,711 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 22:01:56,026 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:01:56] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:01:58,574 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:01:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:02:23,397 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:02:23] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:02:28,046 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:02:28] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:02:30,390 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:02:30] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:02:42,245 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:02:42] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-26 22:02:42,254 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'fever', 'cough', 'chest pain', 'nausea'] | Age: 20
+2025-05-26 22:02:42,824 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 22:02:42,828 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:02:42] "POST /diagnose HTTP/1.1" 200 -
+2025-05-26 22:04:25,386 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:04:25] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:11:58,743 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 5000
+2025-05-26 22:11:58,806 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.227:5000
+2025-05-26 22:11:58,808 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 22:11:58,990 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:11:58] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:12:03,304 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:12:03] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:12:05,297 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:12:05] "GET /health-check HTTP/1.1" 200 -
+2025-05-26 22:12:50,873 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:12:50] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-26 22:12:50,892 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'runny nose', 'fever', 'cough', 'dizziness'] | Age: 60
+2025-05-26 22:12:51,536 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-26 22:12:51,536 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:12:51] "POST /diagnose HTTP/1.1" 200 -
