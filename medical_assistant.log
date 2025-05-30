@@ -341,3 +341,104 @@ message: "API key not valid. Please pass a valid API key."
 2025-05-26 22:12:50,892 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'runny nose', 'fever', 'cough', 'dizziness'] | Age: 60
 2025-05-26 22:12:51,536 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2025-05-26 22:12:51,536 - werkzeug - INFO - 192.168.0.227 - - [26/May/2025 22:12:51] "POST /diagnose HTTP/1.1" 200 -
+2025-05-29 18:33:25,877 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 8000
+2025-05-29 18:33:25,929 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.227:8000
+2025-05-29 18:33:25,929 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 18:39:29,861 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 18:39:29] "GET / HTTP/1.1" 200 -
+2025-05-29 18:39:33,679 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 18:39:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-29 19:56:13,337 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 8000
+2025-05-29 19:56:13,373 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.227:8000
+2025-05-29 19:56:13,373 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 19:57:28,442 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 19:57:28] "GET / HTTP/1.1" 200 -
+2025-05-29 22:09:13,966 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 22:09:13] "GET / HTTP/1.1" 200 -
+2025-05-29 22:31:44,534 - medical_assistant - INFO - Starting Enhanced Medical Assistant API v3.1 on port 8000
+2025-05-29 22:31:44,753 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.227:8000
+2025-05-29 22:31:44,760 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 22:57:05,440 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 22:57:05] "[33mGET /frontend/index.html HTTP/1.1[0m" 404 -
+2025-05-29 22:57:05,511 - werkzeug - INFO - 127.0.0.1 - - [29/May/2025 22:57:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-29 22:59:21,129 - werkzeug - INFO - 192.168.0.227 - - [29/May/2025 22:59:21] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-29 22:59:21,190 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['dizziness'] | Age: None
+2025-05-29 22:59:21,190 - werkzeug - INFO - 192.168.0.227 - - [29/May/2025 22:59:21] "POST /diagnose HTTP/1.1" 200 -
+2025-05-30 00:11:22,578 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:11:22] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-30 00:11:22,594 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'ache'] | Age: None
+2025-05-30 00:11:23,283 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-30 00:11:23,285 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:11:23] "POST /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:22,036 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:22] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:22,043 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'ache'] | Age: None
+2025-05-30 00:15:22,384 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-30 00:15:22,385 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:22] "POST /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:36,969 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:36] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:36,978 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['headache', 'ache'] | Age: None
+2025-05-30 00:15:37,318 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-30 00:15:37,320 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:37] "POST /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:53,447 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:53] "OPTIONS /diagnose HTTP/1.1" 200 -
+2025-05-30 00:15:53,447 - medical_assistant - INFO - Enhanced diagnosis - Symptoms: ['cough'] | Age: None
+2025-05-30 00:15:53,798 - medical_assistant - ERROR - Gemini API error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-30 00:15:53,799 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:15:53] "POST /diagnose HTTP/1.1" 200 -
+2025-05-30 00:19:23,608 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:19:23,697 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.227:8000
+2025-05-30 00:19:23,697 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 00:19:23,701 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 00:19:25,325 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:19:25,363 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 00:19:25,377 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 00:19:57,476 - medical_assistant - INFO - Cleaned up 0 old conversations
+2025-05-30 00:19:57,478 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:19:57] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:20:07,166 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:20:07] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:20:22,666 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:20:22] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:20:44,435 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:20:44] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:20:47,162 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:20:47] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:20:52,718 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:20:52] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:21:14,877 - werkzeug - INFO - 192.168.0.227 - - [30/May/2025 00:21:14] "[33mOPTIONS /diagnose HTTP/1.1[0m" 404 -
+2025-05-30 00:26:53,433 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 00:26:53,907 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 00:26:56,997 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:26:57,019 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 00:26:57,031 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 00:34:24,133 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:34:24,176 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.227:8000
+2025-05-30 00:34:24,185 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 00:34:24,187 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 00:34:26,028 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:34:26,046 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 00:34:26,050 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 00:36:23,867 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 00:36:24,216 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 00:36:27,071 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:36:27,093 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 00:36:27,102 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 00:36:57,052 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 00:36:57,319 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 00:36:59,821 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 00:36:59,876 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 00:36:59,888 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 11:13:42,037 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 11:13:42,240 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 11:13:44,974 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 11:13:45,029 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 11:13:45,029 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 11:14:00,424 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 11:14:00,573 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 11:14:02,229 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 11:14:02,252 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 11:14:02,256 - werkzeug - INFO -  * Debugger PIN: 110-648-610
+2025-05-30 11:38:54,233 - werkzeug - INFO -  * Detected change in 'C:\\Users\\sagar\\OneDrive\\Desktop\\code_for_change\\medical_chatbot.py', reloading
+2025-05-30 11:38:54,407 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 11:38:56,321 - medical_assistant - INFO - Starting Enhanced Medical Chatbot v4.0 on port 8000
+2025-05-30 11:38:56,356 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 11:38:56,362 - werkzeug - INFO -  * Debugger PIN: 110-648-610
